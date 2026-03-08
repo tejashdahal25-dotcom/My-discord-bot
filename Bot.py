@@ -406,6 +406,5 @@ async def dice(ctx, bet: int = None):
         save()
         await ctx.send(f"🎲 You rolled **{roll}**! You lost **{bet}** coins. New balance: {users[uid]['coins']}")
 # ===== RUN BOT =====
-
 import os
-bot.run(os.environ['MTQ3NTQ2ODc1OTE1MzI1MDM2NA.GnXg6_.n_z8Oa6zw7qYgmv5vlxjzruKyRT3Xi6RvxkQTc'])
+bot.run(os.environ['DISCORD_TOKEN'])
