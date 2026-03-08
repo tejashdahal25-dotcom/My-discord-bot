@@ -1,4 +1,6 @@
 import discord
+from keep_alive import keep_alive
+keep_alive()
 from discord.ext import commands
 import random
 import json
@@ -404,4 +406,6 @@ async def dice(ctx, bet: int = None):
         save()
         await ctx.send(f"🎲 You rolled **{roll}**! You lost **{bet}** coins. New balance: {users[uid]['coins']}")
 # ===== RUN BOT =====
-bot.run("MTQ3NTQ2ODc1OTE1MzI1MDM2NA.GnXg6_.n_z8Oa6zw7qYgmv5vlxjzruKyRT3Xi6RvxkQTc")
+
+import os
+bot.run(os.environ['MTQ3NTQ2ODc1OTE1MzI1MDM2NA.GnXg6_.n_z8Oa6zw7qYgmv5vlxjzruKyRT3Xi6RvxkQTc'])
